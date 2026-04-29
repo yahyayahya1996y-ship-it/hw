@@ -1,11 +1,30 @@
-GoodMorning Doctor Ahmad,
--First i create react project using terminal,
--i create new repository
--i install npm then i push my react project to github
--install boostrap
--put code to app.tsx and main to create navbar using boostrap
--install UI material
--use code to create slide 
-All these steps i do it using site boostrap and UI material.
--This project was developed with guidance from ChatGPT.
-https://chatgpt.com/share/69ede7df-f3bc-8391-8cda-bcfaae1729cc
+I removed Bootstrap:
+
+npm uninstall bootstrap
+
+and I deleted its import from the project files.
+
+After that, I installed Tailwind CSS:
+
+npm install tailwindcss @tailwindcss/vite
+I configured Tailwind by:
+adding it in vite.config.ts
+
+adding this line in index.css:
+
+@import "tailwindcss";
+I removed the old SCSS file (login.scss) and stopped using it.
+
+I converted my styles to Tailwind by writing classes directly inside className.
+
+Example:
+
+className="bg-white p-8 rounded-lg shadow-md"
+I tested Tailwind by changing text color and size, and it worked.
+Result
+Bootstrap is removed
+Tailwind CSS is working
+Styling is now done using Tailwind classes
+Note
+
+https://chatgpt.com/share/69f1ab7d-e820-8396-94f2-cfb34a294bdf
